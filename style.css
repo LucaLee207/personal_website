@@ -24,7 +24,7 @@
     font-style: normal;
 }
 .two{
-    background-color: #F7E7DC;
+    background-color: #FFF8F3;
 }
 .title{
     letter-spacing:5px;
@@ -75,4 +75,73 @@ p{
     grid-column:1/3;
     grid-row:1/3;
 }
+/* list items */
+li{
+    margin:5px;
+}
+/* collapsibles */
+.collapsible {
+    background-color: #FFF8F3;
+    cursor: pointer;
+    padding: 25px 25px 5px;
+    width: 100%;
+    border: none;
+    box-shadow: -10px 13px 10px rgb(167, 166, 166);
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+.active, .collapsible:hover{
+    background-color: #F7E7DC;
+}
+.collapsible:before{
+    content: '\002b';
+    color: black;
+    float:right;
+    margin-left: 4px;
+    font-weight: bold;
+    font-size:20px;
 
+}
+.active:before {
+    content: "\2212";
+  }
+
+.content {
+    z-index: 2;
+    padding: 0px 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #FFF8F3;
+    box-shadow: -10px 10px 10px rgb(167, 166, 166);
+}
+
+/* Table */
+
+
+table{
+    border-collapse: collapse;
+    width:100%;
+    box-shadow: -10px 10px 10px rgb(167, 166, 166);
+}
+td,tr, th{
+    border:1px solid #F7E7DC;
+    text-align:left;
+    padding:10px;
+}
+
+tr:nth-child(even){
+    background-color: #FFF8F3;
+}
+tr:nth-child(odd){
+    background-color:white;
+}
+td:nth-child(odd){
+    font-weight:bold;
+}
+
+/* header */
+.nav-link, .active{
+    background-color:black
+}
