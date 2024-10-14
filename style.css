@@ -43,7 +43,7 @@
 }
 p{
     text-align: justify;
-    font-size: 20px;
+    font-size: 18px;
 }
 .link-bar{
     display: flex;
@@ -84,12 +84,16 @@ p{
     /* background-color:black; */
     color: black;
 }
-.nav-link:hover, .nav-link.active{
-    color: #F7E7DC
+.nav-link:hover{
+    color: #F7E7DC;
+}
+.nav-link:active{
+    color:white;
 }
 .current{
     background-color: black;
     color:white;
+    pointer-events:none;
 }
 /* list items */
 li{
